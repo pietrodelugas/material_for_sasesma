@@ -1,0 +1,41 @@
+
+&CONTROL
+title="mg_bulk",
+calculation="vc-relax",
+restart_mode = 'from_scratch',
+tprnfor=.t.,
+prefix="mg_bulk",
+outdir         = "./",
+pseudo_dir     = "./",
+etot_conv_thr=1.0D-5
+forc_conv_thr=1.0D-4
+/
+&SYSTEM
+                      ibrav = 0,
+                  celldm(1) = 6.064508643,
+                        nat = 2,
+                       ntyp = 1,
+                    ecutwfc = 58.0
+                    ecutrho = 358.0 
+		occupations = "smearing"
+		    degauss = 0.001
+			nosym =.t.,
+/
+&ELECTRONS
+conv_thr=1.0D-8
+/
+&IONS
+/
+&CELL
+/
+CELL_PARAMETERS cubic
+0.5 	 -0.8660254	  0.0
+0.5 	  0.8660254	  0.0
+0.0	  0.00000	  1.623613362
+ATOMIC_SPECIES
+   Mg    1.00000  Mg.pbe-nl-rrkjus.UPF
+ATOMIC_POSITIONS crystal
+Mg	0.33333	0.66666	0.75
+Mg	0.66666	0.33333	0.25
+K_POINTS automatic
+6 6 6 1 1 1 
