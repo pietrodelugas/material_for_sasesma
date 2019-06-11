@@ -17,3 +17,8 @@ to check that the value of ecutrho is large enough.
 4. Note that in srtio3_ecutrho we reuse density and wavefunctions obtained in
    previous calculation. The scf error at the first step is a good measure of 
    how close are ground state densities at different ecutrho.
+
+
+# Convergence test of ecutwfc 
+
+fix ecutrho to a converged value and perform the convergence of ecutwfc.
