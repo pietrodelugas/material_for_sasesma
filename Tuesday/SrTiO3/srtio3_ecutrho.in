@@ -1,6 +1,6 @@
  &control
     calculation = 'scf'
-    prefix = srtio_check_ecutrho
+    prefix = 'srtio_check_ecutrho'
     tstress=.true.,
      tprnfor = .true.
     pseudo_dir = './'
