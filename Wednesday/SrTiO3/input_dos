@@ -1,0 +1,6 @@
+&dos 
+prefix ='srtio'
+bz_sum = 'tetrahedra_opt'
+deltaE = 0.05
+/ 
+
