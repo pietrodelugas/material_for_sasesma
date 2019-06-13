@@ -1,0 +1,105 @@
+ &control
+    calculation = 'relax'
+    prefix = 'srtio'
+    tstress=.true.,
+     tprnfor = .true.
+    pseudo_dir = './'
+ /
+ &system    
+    ibrav=  1, celldm(1) =   7.38  , nat=  5, ntyp= 3,
+    ecutwfc =70, ecutrho = 600 , occupations = 'smearing', degauss = 0.001  
+/
+ &electrons
+   conv_thr = 1.d-11
+ /
+&ions
+/
+&cell 
+!treinit_gvecs = .true.
+/
+ATOMIC_SPECIES
+ Sr  28.086 Sr.pbe-spn-kjpaw_psl.1.0.0.UPF    
+ O   16.00 O.pbe-n-kjpaw_psl.1.0.0.UPF 
+ Ti  42.00 Ti.pbe-spn-kjpaw_psl.1.0.0.UPF 
+ATOMIC_POSITIONS (crystal)
+ Sr 0.0  0.0  0.0  
+ O  0.5  0.5  0.0 
+ Ti 0.6  0.6  0.6 0 0 0  
+ O  0.0  0.5  0.5 
+ O  0.5  0.0  0.5 
+K_POINTS automatic
+ 6 6 6 1 1 1  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
