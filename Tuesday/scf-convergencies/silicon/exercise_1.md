@@ -1,10 +1,3 @@
----
-title: "Convergence test"
-output:
-  github_document:
-    pandoc_args: --webtex
----
-
 # Convergence test (total energy vs ecutwfc )
 
 ecutwc parameters controls the maximum length of the wave vectors of 
@@ -14,9 +7,9 @@ the plane waves basis set will include more wave vectors and for the
 variational principle the total energy at each calculation should 
 decrease down until reache a converged value. 
 Chose a cut-off energy such that you may consider the total energy converged 
-down to an error of $1^{-6}$. 
+down to an error of 1<sup>-6</sup> Ry
 
-1.  edit the `si.primitive.scf.in` file in order to use $6\times 6 \times 6$ 
+1.  edit the `si.primitive.scf.in` file in order to use 6X6X6
     Monckorst-Pack mesh and run the first calcuation saving it in a file. 
     The launch command could be something like:
 ``` 
