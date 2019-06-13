@@ -1,0 +1,35 @@
+&control
+    calculation='vc-relax'
+    restart_mode='from_scratch',
+    prefix='silicon',
+    pseudo_dir='./',
+    outdir='./'
+
+ /
+ &system
+    ibrav= 1, celldm(1)=10.2, nat=  8, ntyp= 1,
+    ecutwfc = 20.0
+ /
+ &electrons
+    diagonalization='david',
+    conv_thr =  1.0d-8,
+    mixing_beta = 0.5,
+    startingwfc='random',
+ /
+&ions
+/
+&cell
+/
+ATOMIC_SPECIES
+ Si  28.086 Si.pz-vbc.UPF
+ATOMIC_POSITIONS crystal
+ Si -0.125 -0.125 -0.125
+ Si  0.375  0.375 -0.125
+ Si  0.375 -0.125  0.375
+ Si -0.125  0.375  0.375
+ Si  0.125  0.125  0.125
+ Si  0.625  0.625  0.125
+ Si  0.625  0.125  0.625
+ Si  0.125  0.625  0.625
+K_POINTS {automatic}
+3 3 7 0 0 0
